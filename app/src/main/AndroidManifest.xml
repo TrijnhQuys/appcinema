@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Appbanvexemphim"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivityChiTietHistory"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityHistory"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityPaymentNotification"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitySearch"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity_ChonThucAn"
+            android:exported="true"
+            android:label="Merchant Demo"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivityChonRap"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityEmail"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_ChiTietNews"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_PhimCuaRap"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_Login"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity_DatVe"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_ChiTietPhim"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_TheLoai"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">appbanvexemphim</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="opendrawer">open drawer</string>
+    <string name="closerawer">close drawer</string>
+</resources>

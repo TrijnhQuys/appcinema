@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FF4E4E"
+        android:padding="10dp"
+        android:id="@+id/lnLayout1"
+        >
+        <ImageView
+            android:id="@+id/imgiconbook"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin cá nhân"
+            android:layout_below="@id/imgiconbook"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:orientation="vertical"
+        android:layout_below="@id/lnLayout1"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Họ và tên:"
+          android:textSize="20dp"
+          android:textColor="@color/black"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="5dp"
+          android:textStyle="bold"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Trịnh Minh Quý"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Số điện thoại: "
+           android:textSize="20dp"
+           android:textColor="@color/black"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="5dp"
+           android:textStyle="bold"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 0704480927"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quy@gmail.com"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

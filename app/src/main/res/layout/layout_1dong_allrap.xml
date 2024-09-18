@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="4dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_cn_slwhite"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/tvTenRap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CGV Aeon Tân Phú"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvDiaChiRap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lầu 3, Aeon Mall 30 Bờ Bao Tân Thắng, P. Sơn Kỳ Quận Tân Phú TP. Hồ Chí Minh"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0704480928"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

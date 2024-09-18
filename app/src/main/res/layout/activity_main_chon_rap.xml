@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    android:orientation="vertical"
+    tools:context=".MainActivityChonRap">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF6161">
+
+        <TextView
+            android:id="@+id/tvTenPhimDatVe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LẬT MẶT 7: MỘT ĐIỀU ƯỚC"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:hint="Chọn Rạp">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_rap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:src="@drawable/baseline_calendar_today_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Chọn ngày"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btndate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/selector_date"
+            android:button="@color/white"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="2024-05-10" />
+
+        <RadioButton
+            android:id="@+id/btndate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/selector_date"
+            android:button="@color/white"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="2024-05-11" />
+
+        <RadioButton
+            android:id="@+id/btndate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/selector_date"
+            android:button="@color/white"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="2024-05-12" />
+
+        <RadioButton
+            android:id="@+id/btndate4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/selector_date"
+            android:button="@color/white"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="2024-05-13" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:src="@drawable/baseline_access_time_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Chọn thời gian bắt đầu"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btntime1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_cn_slwhite"
+            android:text="19:00:00" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btntime2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_cn_slwhite"
+            android:text="20:00:00" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btntime3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_cn_slwhite"
+            android:text="21:00:00" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btntime4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_cn_slwhite"
+            android:text="22:00:00" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivitySearch">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarsanphamSearch"
+        android:elevation="4dp"
+        android:background="#FF6161"
+        >
+        <SearchView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_mainsanphamSearch"
+            android:background="@drawable/search_bg"
+            android:layout_marginRight="80dp"
+            />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvSearch"
+        />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/containerDialogLayoutÌnomation"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_cn_skblack_slwhite"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Thông tin vé"
+        android:textColor="@color/black"
+        android:id="@+id/tvTitle1"
+        android:layout_margin="7dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/tvTitle2"
+        android:textSize="18dp"
+       android:layout_margin="7dp"
+        android:text="Tôi xác nhận mua vé cho người xem từ đủ 13 tuổi trở lên và đồng ý cung cấp giấy tờ tùy thân để xác thực độ tuổi người xem, tham khảo quy định của Bộ Văn Hóa, Thể Thao và Du Lịch, CGV không được phép phục vụ khách hàng dưới 16 tuổi cho các suất chiếu kết thúc sau 23:00. CGV sẽ không hoàn tiền nếu người xem không đáp ứng đủ điều kiện."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnYES"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/bg_dongy"
+            android:text="Đồng ý"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNO"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Huỷ"
+            android:background="@drawable/bg_account_login_register"
+            android:layout_margin="15dp"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

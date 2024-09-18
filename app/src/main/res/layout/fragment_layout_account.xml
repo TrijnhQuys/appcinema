@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3E3E3">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbaraccount"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FF6161"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THÔNG TIN CÁ NHÂN"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbaraccount"
+            android:layout_marginTop="7dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imgacc"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_account_circle_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="CHƯA ĐĂNG NHẬP"
+                        android:textColor="#202020"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vui lòng đăng nhập"
+                        android:textColor="#202020"
+                        android:textSize="18dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="center"
+                        app:cardUseCompatPadding="true"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:padding="5dp"
+                            android:text="Đăng nhập"
+                            android:textAllCaps="false"
+                            android:textColor="#FF6161"
+                            android:textSize="20dp" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    >
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@id/cardviewAccount"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnlichsudatve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_cn_skwhite"
+                android:text="Lịch sử đặt vé"
+                android:textAllCaps="false"
+                android:gravity="start|center"
+                android:textSize="22dp"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                />
+            <LinearLayout
+                android:background="@drawable/bg_cn_skwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:id="@+id/tvhotline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="HOTLINE hỗ trợ: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoLink="phone"
+                    android:linksClickable="true"
+                    android:text="0704480927"
+                    android:textSize="20dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCall"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableEnd="@drawable/baseline_phone_24"
+                    android:padding="3dp"
+                    android:text="Call"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_cn_skwhite"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:id="@+id/tvemailhotro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Email hỗ trợ: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/infoEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="quy@gmail.com"
+                    android:textColor="#06D5C1"
+                    android:textSize="20dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnGuiEmail"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableEnd="@drawable/baseline_email_24"
+                    android:padding="3dp"
+                    android:text="Gửi"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+            <TextView
+                android:background="@drawable/bg_cn_skwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều Khoản Chung"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:background="@drawable/bg_cn_skwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều Khoản Giao Dịch"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:background="@drawable/bg_cn_skwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chính Sách Thanh Toán"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:background="@drawable/bg_cn_skwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="Chính Sách Bảo Mật"
+                android:padding="10dp"
+                />
+            <TextView
+                android:background="@drawable/bg_cn_skwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Câu Hỏi Thường Gặp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_gravity="center"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="30dp"
+                >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Đăng Xuất"
+                android:id="@+id/btndangxuat"
+                android:background="@null"
+                android:textColor="#FF6161"
+                />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

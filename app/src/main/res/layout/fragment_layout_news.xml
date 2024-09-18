@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E3E3E3"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbartintuc"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF6161"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIN TỨC"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutTinTuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="#FF6161"
+        app:tabIndicatorColor="#FF6161"
+        android:background="@drawable/bg_cn_slwhite"
+       />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2TinTuc"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:saveEnabled="false"
+        android:layout_margin="5dp"
+        />
+</LinearLayout>
